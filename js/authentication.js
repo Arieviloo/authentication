@@ -5,19 +5,15 @@ var inputPassword = document.querySelector("#inputPassword");
 btnLogin.addEventListener("click", () => {
   firebase
     .auth()
-    .signInWithEmailAndPassword(
-      document.querySelector("#inputEmail").value,
-      document.querySelector("#inputPassword").value
-    )
+    .signInWithEmailAndPassword(inputEmail.value, inputPassword.value)
     .then(() => {
-      console.log("deu bom");
+      window.location.replace("dashboard.html");
     })
     .catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      console.log(errorMessage);
-
       // ...
+      alert(errorMessage);
     });
 });
