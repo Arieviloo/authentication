@@ -72,13 +72,13 @@
                           >
                         </div>
                       </div>
-                      <button
-                        class="btn btn-primary btn-user btn-block"
-                        id="btnLogin"
-                      >
-                        Login
-                      </button>
                     </form>
+                    <button
+                      class="btn btn-primary btn-user btn-block"
+                      id="btnLogin"
+                    >
+                      Login
+                    </button>
                     <hr />
                     <div class="text-center">
                       <a class="small" href="forgot-password.html"
@@ -107,9 +107,23 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-    <script src="js/authentication.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/authentication.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCddD429Drdbej7ePYIR-WFR6uEUIbvqkA",
+        authDomain: "authentication-a5055.firebaseapp.com",
+        databaseURL: "https://authentication-a5055.firebaseio.com",
+        projectId: "authentication-a5055",
+        storageBucket: "authentication-a5055.appspot.com",
+        messagingSenderId: "689274407378",
+        appId: "1:689274407378:web:c4dc00a9e76daebf14a00b"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
