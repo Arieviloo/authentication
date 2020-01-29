@@ -7,13 +7,13 @@ btnRegister.addEventListener("click", () => {
     .auth()
     .createUserWithEmailAndPassword(inputEmail.value, inputPassword.value)
     .then(() => {
-      console.log("deu bom");
+      window.location.replace("index.html");
     })
     .catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      console.log(errorMessage);
+      alert(errorMessage);
 
       // ...
     });
