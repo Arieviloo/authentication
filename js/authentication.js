@@ -2,6 +2,8 @@ var btnLogin = document.getElementById("btnLogin");
 var inputEmail = document.querySelector("#inputEmail");
 var inputPassword = document.querySelector("#inputPassword");
 
+var btnRegister = document.querySelector("#btnRegister");
+
 btnLogin.addEventListener("click", () => {
   firebase
     .auth()
@@ -16,4 +18,8 @@ btnLogin.addEventListener("click", () => {
       // ...
       alert(errorMessage);
     });
+});
+
+btnRegister.addEventListener("click", () => {
+  alert("deu bom");
 });
